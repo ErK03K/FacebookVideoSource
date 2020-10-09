@@ -20,6 +20,8 @@ def VideoUrl(url):
         elif '//f' in url:
             url = url.replace('//f', '//m.f')
             # print(url)
+        elif 'm.' in url:
+            pass
         else:
             print('Non Valid URL')
         return HTMLParser(url)
