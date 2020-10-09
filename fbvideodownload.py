@@ -17,8 +17,8 @@ def VideoUrl(url):
         if 'www' in url:
             url = url.replace('www', 'm')
             # print(url)
-        elif '//' in url:
-            url = url.replace('//', '//m.')
+        elif '//f' in url:
+            url = url.replace('//f', '//m.f')
             # print(url)
         else:
             print('Non Valid URL')
