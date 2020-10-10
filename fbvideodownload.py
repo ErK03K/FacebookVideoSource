@@ -26,8 +26,10 @@ def VideoUrl(url):
             print('Non Valid URL')
         return HTMLParser(url)
     except:
-        print('An error has occurred, please contact the script creator.')
+        return'An error has occurred, please contact the script creator.'
 
 if __name__ == "__main__": 
     url = input('Type your Facebook Video URL: ')
+    if 'http' not in url:
+        url = 'https://'+url
     print(f'Your Video URL is: {VideoUrl(url)}')
