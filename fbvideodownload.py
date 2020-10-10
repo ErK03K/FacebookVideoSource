@@ -1,6 +1,6 @@
 import requests as r, bs4, urllib.parse as u
 
-#Uncode is u.unquote(url)
+#Decode is u.unquote(url)
 
 def HTMLParser(url):
     # print(url)
@@ -23,7 +23,7 @@ def VideoUrl(url):
         elif 'm.' in url:
             pass
         else:
-            print('Non Valid URL')
+            return 'Non Valid URL'
         return HTMLParser(url)
     except:
         return'An error has occurred, please contact the script creator.'
